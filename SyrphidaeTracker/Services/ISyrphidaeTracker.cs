@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 using SyrphidaeTracker;
 using SyrphidaeTracker.Services;
 
-namespace SyrphidaeTracker.Services
-{
-    public interface ISyrphidaeTracker
-    {
-        List<Bug> GetBugs();
+namespace SyrphidaeTracker.Services;
 
-        void AddBug(Bug newBug);
-    }
+public interface ISyrphidaeTracker
+{
+    List<Bug> GetBugs();
+
+    void AddBug(Bug newBug);
 }
