@@ -65,7 +65,7 @@ public partial class MainWindow : Window
     }
     private async void openConnection_Click(object sender, RoutedEventArgs e)
     {
-        connection.On<string, string>("RecieveMessage", (user, message) =>
+        connection.On<string, string>("ReceiveMessage", (user, message) =>
         {
             this.Dispatcher.Invoke(() =>
             {

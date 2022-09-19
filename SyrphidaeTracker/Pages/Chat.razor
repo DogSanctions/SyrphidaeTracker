@@ -17,7 +17,7 @@
 
 <hr />
 
-<ul id="messagesList">
+<ul>
     @foreach (string message in messages)
     {
         <li>@message</li>
@@ -37,9 +37,9 @@
             .WithAutomaticReconnect()
             .Build();
 
-        hubConnection.On<string, string>("ReceiveMessage", (userInput, messageInput) =>
+        hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
         {
-            var formattedMessage = $"{userInput}: {messageInput}";
+            var formattedMessage = $"{user}: {message}";
             messages.Add(formattedMessage);
             InvokeAsync(StateHasChanged);
         });
