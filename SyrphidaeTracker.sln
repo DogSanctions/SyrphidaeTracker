@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyrphidaeTracker", "SyrphidaeTracker\SyrphidaeTracker.csproj", "{BFA2FAF5-6291-484A-B892-DA48D5FF585E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFClient", "WPFClient\WPFClient.csproj", "{FA3CF99E-D646-4E08-96CE-763D7FDD4BA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFA2FAF5-6291-484A-B892-DA48D5FF585E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA2FAF5-6291-484A-B892-DA48D5FF585E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA2FAF5-6291-484A-B892-DA48D5FF585E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA2FAF5-6291-484A-B892-DA48D5FF585E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3CF99E-D646-4E08-96CE-763D7FDD4BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3CF99E-D646-4E08-96CE-763D7FDD4BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3CF99E-D646-4E08-96CE-763D7FDD4BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3CF99E-D646-4E08-96CE-763D7FDD4BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85B42D9A-7265-4387-ACFA-E0EF2EC4543D}
+	EndGlobalSection
+EndGlobal
