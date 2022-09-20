@@ -1,5 +1,6 @@
 ﻿@page "/new-bug"
 @using SyrphidaeTracker.Services
+@inject NavigationManager NavManager
 @inject ISyrphidaeTracker BugService
 
 <h3>Add New Bug</h3>
@@ -8,7 +9,7 @@
     <InputText @bind-Value="AddBug.Title" placeholder="Enter Title" />
     <InputText @bind-Value="AddBug.Description" placeholder="Enter Description" />
     <InputNumber @bind-Value="AddBug.Priority" placeholder="Enter Priority" />
-    <button class="btn btn-primary" @onclick="HandleValidSubmit">Add Bug</button>
+    <button class="btn btn-primary" type="submit">Add Bug</button>
 </EditForm>
 
 @code {
@@ -17,5 +18,6 @@
     protected void HandleValidSubmit()
     {
         BugService.AddBug(AddBug);
+        NavManager.NavigateTo("");
     }
 }
