@@ -19,6 +19,7 @@ using Microsoft.EntityFrameworkCore;
 using SyrphidaeTracker.Areas.Identity.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using SyrphidaeTracker.Areas.Identity;
+using Syncfusion.Blazor;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SyrphidaeTrackerContextConnection") ?? throw new InvalidOperationException("Connection string 'SyrphidaeTrackerContextConnection' not found.");
@@ -32,6 +33,7 @@ builder.Services.AddDefaultIdentity<SyrphidaeTrackerUser>(options => options.Sig
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSyncfusionBlazor(); 
 builder.Services.AddSignalR();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<SyrphidaeTrackerUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
@@ -65,6 +67,7 @@ app.UseEndpoints(endpoints =>
     app.MapHub<CounterHub>("/counterhub");
     app.MapFallbackToPage("/_Host");
 });
+
 app.UseAuthentication();
 
 app.Run();

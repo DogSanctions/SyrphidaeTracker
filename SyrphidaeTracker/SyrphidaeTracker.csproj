@@ -17,6 +17,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.9" />
+    <PackageReference Include="Syncfusion.Blazor.Kanban" Version="20.2.0.50" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.50" />
   </ItemGroup>
 
 </Project>
