@@ -11,7 +11,6 @@ public class SyrphidaeTrackerContext : IdentityDbContext<SyrphidaeTrackerUser>
         : base(options)
     {
     }
-
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
